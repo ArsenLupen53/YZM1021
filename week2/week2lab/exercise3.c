@@ -26,13 +26,13 @@ int main(void)
     bprice = 7.25;
     tprice = rprice + bprice;
 
-    printf("Number of Red pack: %d\n",rpens);
-    printf("Number of Blue pack: %d\n",bpens);
-    printf("Number of Total: %d\n",total);
+    printf("Number of Red pack: %d\n", rpens);
+    printf("Number of Blue pack: %d\n", bpens);
+    printf("Number of Total: %d\n", total);
     
-    printf("Price of red: %.2f\n",rprice);
-    printf("Price of blue: %.2f\n",bprice);
-    printf("Price of total: %.2f\n",tprice);
+    printf("Price of red: %.2f\n", rprice);
+    printf("Price of blue: %.2f\n", bprice);
+    printf("Price of total: %.2f\n", tprice);
 
     return 0;
 }
