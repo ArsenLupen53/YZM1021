@@ -22,8 +22,8 @@ int main(void)
     max_piece = floor(original_length);
     length_to_buy = ceil(original_length);
     
-    printf("Maximum pieces: %0.f\n", max_piece);
-    printf("Length to buy: %0.f\n", length_to_buy);
+    printf("Maximum pieces: %.0f\n", max_piece);
+    printf("Length to buy: %.0f\n", length_to_buy);
 
     return (0);
 }

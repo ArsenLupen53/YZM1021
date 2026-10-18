@@ -22,8 +22,8 @@ int main(void)
 
     printf("Square root: %.2f\n", square_root);
     printf("Square: %.2f\n", square);
-    printf("Rounded up squared root %0.f\n", rounded_up);
-    printf("Rounded down squared root %0.f\n", rounded_down);
+    printf("Rounded up squared root %.0f\n", rounded_up);
+    printf("Rounded down squared root %.0f\n", rounded_down);
 
     return 0;
 }
