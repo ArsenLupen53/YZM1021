@@ -21,12 +21,8 @@ int main()
     int midterm, final, attendance;
     double score;
 
-    printf("Enter your midterm score: ");
-    scanf("%d\n",&midterm);
-    printf("Enter your final score: ");
-    scanf("%d\n", &final);
-    printf("Enter your attendance: ");
-    scanf("%d\n", &attendance);
+    printf("Enter your M F A: ");
+    scanf("%d %d %d",&midterm, &final, &attendance);
 
     score = midterm * MID_WEIGHT + (final * (1- MID_WEIGHT));
     printf("Score: %.1f\n", score);
