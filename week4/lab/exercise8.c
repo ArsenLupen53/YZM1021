@@ -30,7 +30,7 @@ int main()
 
     printf("Sum: %d\n", sum);
     printf("Mean: %.2f\n", mean);
-    printf("Whole: %0.f\n", mean);
+    printf("Whole: %.0f\n", mean);
     printf("Max: %d\n",max);
 
     return 0;

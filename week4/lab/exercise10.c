@@ -6,7 +6,7 @@
     if it is rectangular then you are gonna take two variables (float)
     20 square meters, the given area is bigger than 20
     define constant variable for the maximum area
-    it is too large, print it is okay
+    it is bigger than MAX_AREA alert user, if not say it is okay
 */
 
 #include <stdio.h>
