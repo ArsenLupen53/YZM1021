@@ -21,23 +21,27 @@ int main()
     int midterm, final, attendance;
     double score;
 
-    printf("Enter your M F A: ");
-    scanf("%d %d %d",&midterm, &final, &attendance);
+    printf("Enter your midterm score: ");
+    scanf("%d", &midterm);
+    printf("Enter your final score: ");
+    scanf("%d", &final);
+    printf("Enter your attendance: ");
+    scanf("%d", &attendance);
 
     score = midterm * MID_WEIGHT + (final * (1- MID_WEIGHT));
     printf("Score: %.1f\n", score);
 
     if (score >= 90 && attendance >= MIN_ATTENDANCE)
     {
-        printf("Bonus");
+        printf("Bonus\n");
     }
     else if (score >=50 && attendance >= MIN_ATTENDANCE)
     {
-        printf("Pass");
+        printf("Pass\n");
     }
     else
     {
-        printf("Fail");
+        printf("Fail\n");
     }
 
     return 0;

@@ -13,7 +13,7 @@ int main()
     int num1, num2, num3, sum, whole, max;
     double mean;
     printf("Readings: ");
-    scanf("%d %d %d\n", &num1, &num2, &num3);
+    scanf("%d %d %d", &num1, &num2, &num3);
 
     sum = num1 + num2 + num3;
     mean = (double) sum / 3;
