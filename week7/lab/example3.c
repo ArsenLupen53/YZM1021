@@ -26,6 +26,8 @@ int main()
 
     printf("Size: ");
     scanf(" %c",&size);
+    printf("Quantity: ");
+    scanf("%d",&quantity);
 
     switch (size)
     {
@@ -37,7 +39,7 @@ int main()
         case 'M':
             fee = quantity * 20;
             break;
-        case 'l ':
+        case 'l':
         case 'L':
             fee = quantity * 30;
             break;
@@ -45,9 +47,6 @@ int main()
             printf("Error");
             return 0;
     }
-
-    printf("Quantity: ");
-    scanf("%d",&quantity);
 
     if (quantity >= 5)
         fee *= 0.9;

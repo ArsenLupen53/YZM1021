@@ -30,7 +30,7 @@ int main()
         scanf(" %c",&code);
 
         switch (code){
-            case 'a': a++; break;
+            case 'a': a++; break; //ilginç
             case 'b': b++; break;
             case 'c': c++; break;
             default:
