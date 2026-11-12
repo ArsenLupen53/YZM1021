@@ -38,7 +38,7 @@ int main()
     }
 
     mean = (float) sum / count;
-    if (count != 0 || sum != 0 || maximum != 0) {
+    if (count == 0) {
         printf("count : %d, mean: %.2f, maximum: %d",count,mean,maximum);
     }
     else
