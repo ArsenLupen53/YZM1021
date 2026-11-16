@@ -1,50 +1,48 @@
-/*
-Write a C program that takes two characters and a number from the user and creates an alternating hourglass pattern.
-*/
-
 #include <stdio.h>
 
 int main()
 {
-    char f,s;
-    int n, i = 0, z = 0;
-    printf(": ");
-    scanf(" %c %c%d",&f,&s,&n);
+    char f, s;
+    int n, i = 0, z = 1;
+    // printf(": "); -> SİLİNDİ
+    scanf(" %c %c%d", &f, &s, &n);
 
-    while(i<n)
+    while (i < n)
     {
         for (int j = 0; j < i; j++)
             printf(" ");
         for (int a = 0; a < n - i; a++)
         {
-            if (i % 2 == 0)
-                printf("%c",s);
+            if ((n - 1 - i) % 2 == 0) // DÜZELTİLDİ (tek/çift n uyumu)
+                printf("%c", f);
             else
-                printf("%c",f);
+                printf("%c", s);
             printf(" ");
         }
         printf("\n");
         i++;
     }
 
-    while (z < n)
+    if (z < n) // n=1 durumu için koruma
     {
-        for (int a = 0; a < n - z; a++)
+        do // DÜZELTİLDİ (while -> do-while yapıldı)
         {
-            printf(" ");
-        }
-        for (int j = 0; j < z; j++){
-            if (z % 2 == 0)
-                printf("%c",s);
-            else
-                printf("%c",f);
-            printf(" ");
-        }
-        printf("\n");
-        z++;
+            for (int a = 0; a < n - z - 1; a++)
+            {
+                printf(" ");
+            }
+            for (int j = 0; j <= z; j++)
+            {
+                if (z % 2 == 0)
+                    printf("%c", f);
+                else
+                    printf("%c", s);
+                printf(" ");
+            }
+            printf("\n");
+            z++;
+        } while (z < n);
     }
 
-
-    
-
+    return 0;
 }
