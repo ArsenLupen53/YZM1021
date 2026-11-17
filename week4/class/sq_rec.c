@@ -8,7 +8,7 @@ int main()
     char ch;
 
     printf("If you want to calculate the area of rectangular type r/R or s/S to calculate the area of square: ");
-    scanf("%c",&ch);
+    scanf(" %c",&ch);
 
     if (ch == 's' || ch == 'S')
     {

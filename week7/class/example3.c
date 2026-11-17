@@ -8,7 +8,7 @@ int main()
 
     do {
         scanf(" %c",&ch);
-        printf("%d",ch);
+        printf("%d\n",ch);
     }
     while (ch!='\r');
 

@@ -14,7 +14,7 @@ int main()
     for (i = 2; i < N; i++) {
         flag = 1;
         num = 2;
-        while (num<i && flag==1) {
+        while (num<i && flag==1) { //flagı ortadan kaldırmak için flag==1 yerine i%num!=0 kullanabilirdik
             if ((i%num)==0)
                 flag = 0; //means it is not prime
             num++;

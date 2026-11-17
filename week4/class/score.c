@@ -13,12 +13,12 @@ int main()
         printf("Score is super!\n");
         return 0;
     }
-    if (score >= 70)
+    else if (score >= 70)
     {
         printf("Score is great\n");
         return 0;
     }
-    if (score >= 50)
+    else if (score >= 50)
     {
         printf("Score is avarage\n");
         return 0;
