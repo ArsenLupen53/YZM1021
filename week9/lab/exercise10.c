@@ -33,7 +33,7 @@ int gcd(int a, int b)
 {
     if (b==0) return a;
 
-    return gcd(b, a%b);
+    return gcd(b, a%b); //büyüklük sırası fark etmiyor. 12 18 girsen 18 başa 12%18 = 12 olduğu için sona gidiyo 18 12 oluyo.
 }
 
 
