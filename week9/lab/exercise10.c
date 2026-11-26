@@ -44,5 +44,6 @@ int mult(int a, int b)
 {
     if (b == 0) return 0;
 
-    return a + mult(a,b-1);
+    return a + mult(a,b-1); //burası for döngüsü gibi ebobu iki sayıdan birine bölüyon sonra diğer sayıyla çarpıyon 18/6 = 3,   3*12=36 ekok
+    // ebob(x,y).ekok(x,y) = x.y -> ekok(x,y) = x.y / ebob(x,y)
 }
